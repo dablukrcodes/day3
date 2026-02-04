@@ -5,11 +5,11 @@ app.use(express.json())
 
 const note = []
 
-app.post("/notes", (req,body) =>{ 
+app.post("/notes", (req,res) =>{ 
     console.log(req.body)
     note.push(req.body)
 
-  console.log(note)
+//   console.log(note)
 
     res.send("create note")
 })
